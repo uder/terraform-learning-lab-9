@@ -1,0 +1,20 @@
+formatter: "markdown"
+
+  #recursive:
+  #    enabled: true
+  #    path: modules
+
+output:
+    file: "README.md"
+    mode: replace
+    template: |-
+        ## terraform-learning-lab-9
+        Write your personal module for creating EC2 instance in AWS with the following requirements:
+        - at least 5 variable validation blocks
+        - module must be compliant with checkov, terrascan, tfsec utils (if some checks disabled - argue it)
+        - generate doc for newly minted module with terraform-docs
+        - configure pre-commit file and perform push to your personal repo | course repo
+        <!-- BEGIN_TF_DOCS -->
+        {{ .Content }}
+        <!-- END_TF_DOCS --> 
+        
